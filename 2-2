@@ -103,6 +103,10 @@ print(train_target[indexes])
 print(distances)
 ---------------------------------------------------------------------------------------------------
 
+
+기준을 맞춰라
+
+
 plt.scatter(train_input[:,0], train_input[:,1])
 plt.scatter(25, 150, marker='^')
 plt.scatter(train_input[indexes,0], train_input[indexes,1], marker='D')
@@ -121,6 +125,10 @@ print(mean, std)
 
 train_scaled = (train_input - mean) / std
 ---------------------------------------------------------------------------------------------------
+
+
+전처리 데이터로 모델 훈련하
+
 
 plt.scatter(train_scaled[:,0], train_scaled[:,1])
 plt.scatter(25, 150, marker='^')
